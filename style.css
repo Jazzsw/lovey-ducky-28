@@ -1,24 +1,51 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 body{
     background: rgb(31,31,42);
     background: linear-gradient(90deg, rgba(31,31,42,1) 15%, rgba(74,38,69,1) 95%);
 }
 #name{
-    color: #dac6d7;
     position: absolute;
     top: 35%;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+#nameTxt{
+    color: #dac6d7;
     justify-content: center;
     font-family: "Raleway", serif;
     font-weight: 700;
     font-size: xx-large;
     letter-spacing: 0.5em;
-    padding: 1%;
-    animation-name: fadeIn;
-    animation-duration: 3s;
+}
+#nameSub{
+    color: #dac6d7;
+    font-family: "Merriweather", serif;
+    position: absolute;
+    top: 60%;
+    animation-name: slide;
+    animation-duration: 4s;
+
 }
 
 @keyframes fadeIn {
-    0% {opacity: 0; top: 30%}
-    100% {opacity: 100%}
+    0% {opacity: 0; transform: translateY(-25%);}
+    100% {opacity: 100%; transform: translateX(0);}
+}
+@keyframes slide{
+    0%{transform: translateX(-300px);}
+    30%{transform: translateX(-300px);}
+    100%{transform: translateX(0);}
+}
+
+#header{
+    text-align: center;
+    justify-content: center;
+}
+
+.titleButtons{
+    color: #dac6d7;
+    font-family: "Merriweather", serif;
+    display: inline-block;
+    padding-left: 5%;
 }
