@@ -9,9 +9,10 @@ wDiv.style.display = 'none'
 
 //Hide other divs on btn press
 document.getElementById('homeTxt').addEventListener('click', function(){
-    hDiv.style.display = 'block'
-    aDiv.style.display = 'none'
-    wDiv.style.display = 'none'
+    location.reload()
+    // hDiv.style.display = 'block'
+    // aDiv.style.display = 'none'
+    // wDiv.style.display = 'none'
 })
 document.getElementById('writingAssignmentsTxt').addEventListener('click', function(){
     wDiv.style.display = 'block'
@@ -19,9 +20,9 @@ document.getElementById('writingAssignmentsTxt').addEventListener('click', funct
     aDiv.style.display =' none'
 })
 document.getElementById('aboutMeTxt').addEventListener('click', function(){
-    aDiv.style.display = 'block'
-    hDiv.style.display = 'none'
-    wDiv.style.display = 'none'
+    // aDiv.style.display = 'block'
+    // hDiv.style.display = 'none'
+    // wDiv.style.display = 'none'
 })
 
 //Hide wrighting on page load
