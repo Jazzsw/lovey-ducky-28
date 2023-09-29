@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 body{
     background: rgb(31,31,42);
     background: linear-gradient(90deg, rgba(31,31,42,1) 15%, rgba(74,38,69,1) 95%);
@@ -58,7 +63,38 @@ body{
     font-family: "Raleway", serif;
 
 }
-
-#wa1{
-    width: 50%;
+.wAssignments{
+    border-style: solid;
+    border-color: #dac6d7;
+    border-radius: 25px;
+    padding: 3%;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 70%;
+    align-self: center;
 }
+
+.wButton{
+    position: relative;
+    left: 85%;
+    bottom: 10%;
+    border-style: solid;
+    border-color: #dac6d7;
+    border-radius: 5px; 
+    font-family: "Raleway", serif;
+    color:#dac6d7;
+    background: none;
+
+}
+
+@keyframes big{
+    0%{}
+    100%{width: 70%; height: 1000px;}
+}
+@keyframes letterFade{
+    0%{opacity: 0;}
+    100%{opacity: 100;}
+}
+
+
