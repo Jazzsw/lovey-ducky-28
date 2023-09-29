@@ -9,7 +9,7 @@ wDiv.style.display = 'none'
 
 //Hide other divs on btn press
 document.getElementById('homeTxt').addEventListener('click', function(){
-    location.reload()
+    location.reload(true)
     // hDiv.style.display = 'block'
     // aDiv.style.display = 'none'
     // wDiv.style.display = 'none'
